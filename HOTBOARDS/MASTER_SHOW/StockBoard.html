@@ -15,8 +15,99 @@
 </head>
 
 <body onload="vizrt.payloadhosting.initialize()">
-  <h1>TEST</h1>
- 
+
+  <main>
+    <!-- Input fields for the forms -->
+    <fieldset>
+      <div class="form-group">
+        <label for="boardTitle">Board Title</label>
+        <input class="form-control" id="boardTitle" placeholder="Enter Board Title"></input>
+      </div>
+      <div>
+        <label for="boardSubTitle">Board Subtitle</label>
+        <input class="form-control" id="boardSubTitle" placeholder="Enter Board Subtitle"></input>
+      </div>
+    </fieldset>
+
+    <!-- Radio Buttons -->
+    <fieldset class="form-group">
+      <legend class="col-form-label">Choose the number of stocks you want to dispaly</legend>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="stockChoices" id="stockChoices1" value="1stock">
+        <label class="form-check-label" for="stockChoices1">1</label>
+      </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="stockChoices" id="stockChoices2" value="1stock">
+        <label class="form-check-label" for="stockChoices2">2</label>
+      </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="stockChoices" id="stockChoices3" value="1stock">
+        <label class="form-check-label" for="stockChoices3">3</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="stockChoices" id="stockChoices4" value="1stock">
+        <label class="form-check-label" for="stockChoices4">4</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="stockChoices" id="stockChoices5" value="1stock">
+        <label class="form-check-label" for="stockChoices5">5</label>
+      </div>
+      </div>
+    </fieldset> <!-- radio buttons -->
+
+    <!-- Stock Choices-->
+    <form>
+      <div class="form-row">
+        <div class="col">
+          <input class="form-control" id="boardTitle" placeholder="Enter Stock Symbol2"></input>
+        </div>
+        <div class="col">
+          <input class="form-control" id="boardTitle" placeholder="Stock Name" readonly></input>
+        </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <input class="form-control" id="boardTitle" placeholder="Enter Stock Symbol2"></input>
+        </div>
+
+        <div class="col">
+          <input class="form-control" id="boardTitle" placeholder="Stock Name"></input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input class="form-control" id="boardTitle" placeholder="Enter Stock Symbol"></input>
+        </div>
+
+        <div class="col">
+          <input class="form-control" id="boardTitle" placeholder="Stock Name"></input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input class="form-control" id="boardTitle" placeholder="Enter Stock Symbol"></input>
+        </div>
+
+        <div class="col">
+          <input class="form-control" id="boardTitle" placeholder="Stock Name"></input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input class="form-control" id="boardTitle" placeholder="Enter Stock Symbol"></input>
+        </div>
+
+        <div class="col">
+          <input class="form-control" id="boardTitle" placeholder="Stock Name"></input>
+        </div>
+      </div>
+    </form>
+    </fieldset>
+  </main>
 </body>
 
 
