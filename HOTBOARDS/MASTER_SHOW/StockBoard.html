@@ -9,23 +9,26 @@
   <meta name="author" content="">
 
   <link href="../../../bootstrap-4.2.1-dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link href="../../../Vizrt.UI.Bootstrap\bootstrap.css" rel="stylesheet"> -->
   <script src="../../../../templatebuilder/js/payloadhosting.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../MASTER_SHOW/hotboards.js"></script>
+  
 
 </head>
 
-<body onload="vizrt.payloadhosting.initialize()">
+<body>
 
   <main>
     <!-- Input fields for the forms -->
     <fieldset>
       <div class="form-group">
         <label for="boardTitle">Board Title</label>
-        <input class="form-control" id="boardTitle" placeholder="Enter Board Title"></input>
+        <input class="form-control charCount" id="boardTitle" placeholder="Enter Board Title"></input>
+        <small id="titleCharCount" class="form-text text-muted">Remaining Characters: </small>
       </div>
       <div>
         <label for="boardSubTitle">Board Subtitle</label>
-        <input class="form-control" id="boardSubTitle" placeholder="Enter Board Subtitle"></input>
+        <input class="form-control charCount" id="boardSubTitle" placeholder="Enter Board Subtitle"></input>
       </div>
     </fieldset>
 
