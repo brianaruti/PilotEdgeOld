@@ -9,15 +9,32 @@ $(document).ready(function() {
   // vizrt.payloadhosting.setFieldValueCallbacks(createCallbacks());
   //vizrt.payloadhosting.initialize();
 
-  $(".charCount").on("keyup", function() {
+  $(".countChars").on("keyup", function() {
     $(this).css("background-color", "lightblue");
-
     CharacterCounter(this);
-  });
+  }); //Keyup
 
-  
-});
+  $('.form-check-input[name="stockChoices"]').change(function() {
+    RadioButtonChanged(this);
+  }); // Radio Button
+}); //Document ready function
 
+//Radio button on Change event
+function RadioButtonChanged(e) {
+  let idValue = $(e).attr("id");
+
+  let stockElement = $("#stockChoices1");
+  //alert(idValue);
+
+  // $(".require-if-active").each(function() {
+    
+  //   // if ($(el.data("require-pair")).is(":checked")) {
+  //   //   el.prop("required", true);
+  //   // } else {
+  //   //   el.prop("required", false);
+  //   // }
+  // });
+}
 //Function to set characters remaining, gets the element from the keyup event
 function CharacterCounter(e) {
   let maxNum = characterCountDict[e.id]; //get max character count
@@ -38,12 +55,12 @@ function CharacterCounter(e) {
     $(e).css("color", "black");
   }
 
-  if(charLength === 0){
+  if (charLength === 0) {
     e.nextElementSibling.innerHTML = "";
-  }else{
-    e.nextElementSibling.innerHTML = "REMAING CHARACTERS: " + (maxNum - charLength);
-
+  } else {
+    e.nextElementSibling.innerHTML =
+      "REMAING CHARACTERS: " + (maxNum - charLength);
   }
- 
+
   // alert(maxNumber);
 }

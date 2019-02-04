@@ -10,34 +10,36 @@
 
   <link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- <script src="../../../../templatebuilder/js/payloadhosting.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="../MASTER_SHOW/hotboards.js"></script>
+ 
   
 
 </head>
 
 <body>
-
   <main>
     <!-- Input fields for the forms -->
-    <fieldset>
+    <section>
       <div class="form-group">
         <label for="boardTitle">Board Title</label>
-        <input class="form-control charCount" id="boardTitle" placeholder="Enter Board Title" maxlength=""></input>
+        <input class="form-control countChars" id="boardTitle" placeholder="Enter Board Title" maxlength="">
         <small id="titleCharCount" class="form-text text-muted"></small>
       </div>
       <div>
         <label for="boardSubTitle">Board Subtitle</label>
-        <input class="form-control charCount" id="boardSubTitle" placeholder="Enter Board Subtitle" maxlength=""></input>
+        <input class="form-control countChars" id="boardSubTitle" placeholder="Enter Board Subtitle" maxlength="">
         <small id="titleCharCount" class="form-text text-muted"></small>
       </div>
-    </fieldset>
+    </section>
 
     <!-- Radio Buttons -->
-    <fieldset class="form-group">
+    <section class="form-group">
       <legend class="col-form-label">Choose the number of stocks you want to dispaly</legend>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="stockChoices" id="stockChoices1" value="1stock">
+        <input class="form-check-input" type="radio" name="stockChoices" id="stockChoices1" value="1stock" required>
         <label class="form-check-label" for="stockChoices1">1</label>
       </div>
       </div>
@@ -59,60 +61,36 @@
         <label class="form-check-label" for="stockChoices5">5</label>
       </div>
       </div>
-    </fieldset> <!-- radio buttons -->
+    </section> <!-- radio buttons -->
 
     <!-- Stock Choices-->
-    <form>
-      <div class="form-row">
-        <div class="col">
-          <input class="form-control" id="boardTitle" placeholder="Enter Stock Symbol2"></input>
-        </div>
-        <div class="col">
-          <input class="form-control" id="boardTitle" placeholder="Stock Name" readonly></input>
-        </div>
-        </div>
-      </div>
+    <form class="stock-input">
+        <div class="reveal">
+          <div class="row" >
+            <div class="col">
+              <input class="form-control" id="boardSymbol" placeholder="Enter Stock Symbol"></input>
+            </div>
+            <div class="col">
+              <input class="form-control" id="boardTitle" placeholder="Stock Name" readonly></input>
+            </div>
+          </div> <!--row-->
+        </div><!-- reveal>-->
+        <div class="reveal">
+          <div class="row" >
+            <div class="col">
+              <input class="form-control" id="boardSymbol" placeholder="Enter Stock Symbol"></input>
+            </div>
+            <div class="col">
+              <input class="form-control" id="boardTitle" placeholder="Stock Name" readonly></input>
+            </div>
+          </div> <!--row-->
+        </div><!-- reveal>-->
 
-      <div class="row">
-        <div class="col">
-          <input class="form-control" id="boardTitle" placeholder="Enter Stock Symbol2"></input>
-        </div>
-
-        <div class="col">
-          <input class="form-control" id="boardTitle" placeholder="Stock Name"></input>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <input class="form-control" id="boardTitle" placeholder="Enter Stock Symbol"></input>
-        </div>
-
-        <div class="col">
-          <input class="form-control" id="boardTitle" placeholder="Stock Name"></input>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <input class="form-control" id="boardTitle" placeholder="Enter Stock Symbol"></input>
-        </div>
-
-        <div class="col">
-          <input class="form-control" id="boardTitle" placeholder="Stock Name"></input>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <input class="form-control" id="boardTitle" placeholder="Enter Stock Symbol"></input>
-        </div>
-
-        <div class="col">
-          <input class="form-control" id="boardTitle" placeholder="Stock Name"></input>
-        </div>
-      </div>
     </form>
-    </fieldset>
+
   </main>
 </body>
+
 
 
 </html>
